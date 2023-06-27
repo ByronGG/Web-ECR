@@ -8,17 +8,31 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">
-            <img src="src/logo_primaria.png" alt="logo primaria">
-            <h2 class="primaria-rebsamen">Enrique C. Rebsamen</h2>
-        </a>
-        <nav>
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="nosotros.html" class="nav-link">Sobre Nosotros</a>
-            <a href="mailto: 28dpr1720q@set.edu.mx?subject=Conocerlos &body=" class="nav-link">Contacto</a>
+        <div class="logo">Enrique C. Rebsamen</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar"> 
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li><a href="">TEST</a></li>
+                <li><a href="nosotros.html">Conónocenos</a></li>
+                <li><a href="mailto: 28dpr1720q@set.edu.mx?subject=Conocerlos &body=">Contactanos</a></li>
+            </ul>
         </nav>
     </header>
-    
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("nav-bar-active");
+        }
+    </script>
+
     <div class="slider">
         <ul>
             <li><img src="src/slider1.jpg" alt=""></li>
