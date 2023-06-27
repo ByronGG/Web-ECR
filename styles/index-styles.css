@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: sans-serif;
     margin: 0;
@@ -45,4 +50,64 @@ nav a:hover{
     nav{
         padding: 10px 0px;
     }
+}
+
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+    @media (min-width: 768px){
+        height: 600px;
+    }
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: slider 20s infinite alternate;
+    animation-timing-function: linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider li img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+
+    @media (min-width: 768px){
+        object-fit: cover;
+    }
+}
+
+@supports (object-fit: cover){
+    .slider li img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@keyframes slider{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
 }
