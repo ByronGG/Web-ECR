@@ -66,10 +66,8 @@ nav a:hover{
     flex: 1;
     background-color: rgb(163, 236, 240);
 }
-.nosotros-contenedor{
-    top: 100px;
-    left: 400px;
-    width: 65%;
+.about-container{
+    width: 85%;
     min-height: 80vh;
     position: absolute;
     background-color: white;
@@ -80,22 +78,19 @@ nav a:hover{
     padding: 20px 40px;
     border-radius: 5px;
 }
-
-.imagen-contenedor{
+.image-container{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.imagen-contenedor img{
+.image-container img {
     width: 500px;
     height: 500px;
     margin: 20px;
     border-radius: 10px;
 }
-
-.text-contenedor{
+.text-container{
     flex: 1;
     display: flex;
     justify-content: center;
@@ -103,18 +98,11 @@ nav a:hover{
     flex-direction: column;
     font-size: 22px;
 }
-
-.text-contenedor h1{
+.text-container h1{
     font-size: 70px;
     padding: 20px 0px;
 }
-
-.text-contenedor p{
-    font-size: 22px;
-    padding: 10px 0px;
-}
-
-.text-contenedor a{
+.text-container a{
     text-decoration: none;
     padding: 12px;
     margin: 50px 0px;
@@ -124,35 +112,32 @@ nav a:hover{
     border-radius: 5px;
     transition: .3s all ease;
 }
-
-.text-contenedor a:hover{
+.text-container a:hover{
     background-color: transparent;
     color: black;
     border: 2px solid rebeccapurple;
 }
-
 @media screen and (max-width: 1600px){
-    .nosotros-contenedor{
+    .about-container{
         width: 90%;
     }
-    .imagen-contenedor img{
+    .image-container img{
         width: 400px;
         height: 400px;
     }
-    .text-contenedor h1{
+    .text-container h1{
         font-size: 50px;
     }
 }
-
 @media screen and (max-width: 1100px){
-    .nosotros-contenedor{
+    .about-container{
         flex-direction: column;
     }
-    .imagen-contenedor img{
+    .image-container img{
         width: 300px;
         height: 300px;
     }
-    .text-contenedor {
+    .text-container {
         align-items: center;
     }
 }
